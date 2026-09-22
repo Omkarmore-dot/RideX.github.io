@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courier Delivery | RideX Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="brand-logo"><div class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></div>Ride<span>X</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="booking.html">Book Ride</a></li>
+      <li><a href="rental.html">Rent Vehicle</a></li>
+      <li><a href="courier.html">Courier Delivery</a></li>
+      <li><a href="tracking.html">Track Courier</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="booking.html" class="btn btn-sm btn-primary">Demo Booking</a>
+      <button class="menu-toggle" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main><section class="section"><div class="container"><div class="section-header"><span class="section-subtitle">Parcel Service</span><h1 class="section-title">Courier Delivery</h1><p class="section-desc">Demonstrate parcel booking and delivery options without storing data.</p></div>
+<div class="card" style="max-width:900px;margin:auto"><form onsubmit="demoAlert(event)">
+<div class="form-row"><div class="form-group"><label>Sender Name</label><input class="form-control" required></div><div class="form-group"><label>Receiver Name</label><input class="form-control" required></div></div>
+<div class="form-row"><div class="form-group"><label>Pickup Address</label><input class="form-control" required></div><div class="form-group"><label>Delivery Address</label><input class="form-control" required></div></div>
+<div class="form-row"><div class="form-group"><label>Parcel Weight (kg)</label><input class="form-control" type="number" value="1"></div><div class="form-group"><label>Delivery Option</label><select class="form-control"><option>Standard Delivery</option><option>Express Delivery</option><option>Same Day Delivery</option></select></div></div>
+<button class="btn btn-accent btn-lg"><i class="fa-solid fa-box"></i> Create Demo Shipment</button>
+</form></div></div></section></main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo"><div class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></div>Ride<span style="color:#38bdf8;">X</span></a>
+        <p><strong>RideX – Smart Multi-Vehicle Rental, Booking & Courier Delivery System</strong>. BSc Computer Science final year project demo.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Navigation</h4><ul class="footer-links">
+        <li><a href="index.html">Home Page</a></li><li><a href="vehicles.html">All Fleet Vehicles</a></li>
+        <li><a href="booking.html">Book Instant Ride</a></li><li><a href="rental.html">Self-Drive Rentals</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links">
+        <li>Ride Booking</li><li>Vehicle Rental</li><li>Courier Delivery</li><li>Tracking</li>
+      </ul></div>
+      <div class="footer-col"><h4>Demo Notice</h4><p style="color:#94a3b8;">This GitHub Pages version is a static visual demo. No real booking, database or payment is performed.</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 RideX Demo • BSc Computer Science Final Year Project</p></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script><script>function demoAlert(e){e.preventDefault();alert('RideX Demo: This is a static presentation demo. No real booking or payment is processed.');}</script>
+</body></html>

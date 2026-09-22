@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | RideX Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="brand-logo"><div class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></div>Ride<span>X</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="booking.html">Book Ride</a></li>
+      <li><a href="rental.html">Rent Vehicle</a></li>
+      <li><a href="courier.html">Courier Delivery</a></li>
+      <li><a href="tracking.html">Track Courier</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="booking.html" class="btn btn-sm btn-primary">Demo Booking</a>
+      <button class="menu-toggle" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero"><div class="container"><div class="hero-grid">
+<div>
+<div class="hero-tag"><i class="fa-solid fa-sparkles"></i> RideX – Smart Multi-Vehicle Rental & Courier Delivery</div>
+<h1>Smart Ride Booking, Rentals & <span>Swift Courier</span></h1>
+<p>Experience seamless mobility across multiple vehicle categories with online ride booking, self-drive rentals and courier delivery tracking.</p>
+<div style="display:flex;gap:15px;flex-wrap:wrap"><a href="booking.html" class="btn btn-lg btn-primary"><i class="fa-solid fa-car"></i> Book a Ride</a><a href="rental.html" class="btn btn-lg btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3)"><i class="fa-solid fa-key"></i> Rent Self-Drive</a></div>
+</div>
+<div class="hero-booking-widget tab-wrapper">
+<div class="tab-nav"><button class="tab-btn active" data-tab="tab-ride"><i class="fa-solid fa-taxi"></i> Ride</button><button class="tab-btn" data-tab="tab-rent"><i class="fa-solid fa-car"></i> Rent</button><button class="tab-btn" data-tab="tab-courier"><i class="fa-solid fa-box"></i> Courier</button></div>
+<div class="tab-content active" id="tab-ride"><form onsubmit="demoAlert(event)"><div class="form-group"><label>Pickup Location</label><input class="form-control" required placeholder="e.g. Central City Station"></div><div class="form-group"><label>Dropoff Destination</label><input class="form-control" required placeholder="e.g. Airport Terminal"></div><div class="form-row"><div class="form-group"><label>Vehicle Type</label><select class="form-control"><option>Yamaha MT-15 V2</option><option>Honda City</option><option>Toyota Innova Crysta</option></select></div><div class="form-group"><label>Distance (KM)</label><input class="form-control" type="number" value="10"></div></div><button class="btn btn-primary btn-block"><i class="fa-solid fa-arrow-right"></i> Calculate Fare & Book</button></form></div>
+<div class="tab-content" id="tab-rent"><div class="form-group"><label>Choose Rental Vehicle</label><select class="form-control"><option>Honda City – ₹1800/day</option><option>Innova Crysta – ₹2500/day</option></select></div><a href="rental.html" class="btn btn-secondary btn-block">Check Rental Availability</a></div>
+<div class="tab-content" id="tab-courier"><form onsubmit="demoAlert(event)"><div class="form-group"><label>Tracking Code</label><input class="form-control" placeholder="RX-EXP-88901" required></div><button class="btn btn-accent btn-block">Track Shipment Now</button></form></div>
+</div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-header"><span class="section-subtitle">Diverse Mobility Options</span><h2 class="section-title">Explore by Vehicle Category</h2><p class="section-desc">Choose from bikes, scooters, cars, SUVs, vans and commercial vehicles.</p></div>
+<div class="categories-grid">
+<a class="category-card" href="vehicles.html"><div class="cat-icon"><i class="fa-solid fa-motorcycle"></i></div><h3>Bike</h3><span>Available</span></a>
+<a class="category-card" href="vehicles.html"><div class="cat-icon"><i class="fa-solid fa-motorcycle"></i></div><h3>Scooter</h3><span>Available</span></a>
+<a class="category-card" href="vehicles.html"><div class="cat-icon"><i class="fa-solid fa-car-side"></i></div><h3>Car</h3><span>Available</span></a>
+<a class="category-card" href="vehicles.html"><div class="cat-icon"><i class="fa-solid fa-truck-monster"></i></div><h3>SUV</h3><span>Available</span></a>
+</div></div></section>
+
+<section class="section" style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)"><div class="container">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:15px"><div><span class="section-subtitle">Verified & Clean Fleet</span><h2 class="section-title" style="margin-bottom:0">Featured Vehicles Ready To Go</h2></div><a href="vehicles.html" class="btn btn-outline">View All Fleet <i class="fa-solid fa-arrow-right"></i></a></div>
+<div class="vehicle-grid">
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Yamaha MT-15 V2" loading="lazy"><span class="badge-cat">Bike</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Yamaha MT-15 V2</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Yamaha</span><span><i class="fa-regular fa-calendar"></i> 2023</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>2</strong></div><div class="spec-item"><span>Fuel</span><strong>Petrol</strong></div><div class="spec-item"><span>Gear</span><strong>Manual</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹8.50/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹450/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div>
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80" alt="Royal Enfield Classic 350" loading="lazy"><span class="badge-cat">Bike</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Royal Enfield Classic 350</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Royal Enfield</span><span><i class="fa-regular fa-calendar"></i> 2022</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>2</strong></div><div class="spec-item"><span>Fuel</span><strong>Petrol</strong></div><div class="spec-item"><span>Gear</span><strong>Manual</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹10/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹750/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div>
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?auto=format&fit=crop&w=900&q=80" alt="Honda Activa 6G" loading="lazy"><span class="badge-cat">Scooter</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Honda Activa 6G</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Honda</span><span><i class="fa-regular fa-calendar"></i> 2023</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>2</strong></div><div class="spec-item"><span>Fuel</span><strong>Petrol</strong></div><div class="spec-item"><span>Gear</span><strong>Automatic</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹7/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹350/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div>
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1558980664-10e7170b5f3b?auto=format&fit=crop&w=900&q=80" alt="Vespa SXL 150" loading="lazy"><span class="badge-cat">Scooter</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Vespa SXL 150</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Vespa</span><span><i class="fa-regular fa-calendar"></i> 2022</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>2</strong></div><div class="spec-item"><span>Fuel</span><strong>Petrol</strong></div><div class="spec-item"><span>Gear</span><strong>Automatic</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹8/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹500/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div>
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80" alt="Honda City" loading="lazy"><span class="badge-cat">Car</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Honda City</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Honda</span><span><i class="fa-regular fa-calendar"></i> 2023</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>5</strong></div><div class="spec-item"><span>Fuel</span><strong>Petrol</strong></div><div class="spec-item"><span>Gear</span><strong>Automatic</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹14/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹1800/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div>
+<div class="vehicle-card">
+  <div class="vehicle-img-wrap"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80" alt="Toyota Innova Crysta" loading="lazy"><span class="badge-cat">SUV</span><span class="badge-status badge-available">available</span></div>
+  <div class="vehicle-body">
+    <h3>Toyota Innova Crysta</h3>
+    <div class="vehicle-meta"><span><i class="fa-solid fa-car"></i> Toyota</span><span><i class="fa-regular fa-calendar"></i> 2023</span></div>
+    <div class="vehicle-specs"><div class="spec-item"><span>Seats</span><strong>7</strong></div><div class="spec-item"><span>Fuel</span><strong>Diesel</strong></div><div class="spec-item"><span>Gear</span><strong>Automatic</strong></div></div>
+    <div class="vehicle-pricing"><div class="price-item">Ride Rate<strong>₹18/km</strong></div><div class="price-item" style="text-align:right">Rental Rate<strong>₹2500/day</strong></div></div>
+    <div class="vehicle-actions"><a href="booking.html" class="btn btn-sm btn-primary"><i class="fa-solid fa-taxi"></i> Book</a><a href="rental.html" class="btn btn-sm btn-secondary"><i class="fa-solid fa-key"></i> Rent</a></div>
+  </div>
+</div></div></div></section>
+
+<section class="section"><div class="container"><div class="section-header"><span class="section-subtitle">Effortless Experience</span><h2 class="section-title">How RideX Operates</h2><p class="section-desc">Get on the road or send a package in 4 simple connected steps.</p></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px">
+<div class="card" style="text-align:center"><div class="stat-icon blue" style="margin:0 auto 16px"><i class="fa-solid fa-hand-pointer"></i></div><h3>1. Choose Service</h3><p style="color:var(--text-muted)">Pick ride booking, self-drive rental or courier delivery.</p></div>
+<div class="card" style="text-align:center"><div class="stat-icon green" style="margin:0 auto 16px"><i class="fa-solid fa-calculator"></i></div><h3>2. Transparent Pricing</h3><p style="color:var(--text-muted)">View fare and rental rates before confirming.</p></div>
+<div class="card" style="text-align:center"><div class="stat-icon purple" style="margin:0 auto 16px"><i class="fa-solid fa-circle-check"></i></div><h3>3. Instant Booking</h3><p style="color:var(--text-muted)">A demo booking flow shows the confirmation experience.</p></div>
+<div class="card" style="text-align:center"><div class="stat-icon amber" style="margin:0 auto 16px"><i class="fa-solid fa-map-location-dot"></i></div><h3>4. Real-Time Tracking</h3><p style="color:var(--text-muted)">Demonstrate delivery milestone tracking.</p></div>
+</div></div></section>
+
+<section style="background:linear-gradient(135deg,#1e1b4b,#0f172a);color:#fff;padding:50px 0"><div class="container"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:center">
+<div><h2 style="font-size:40px;color:#38bdf8">140+</h2><p>Rides Completed</p></div><div><h2 style="font-size:40px;color:#10b981">12+</h2><p>Vehicles In Fleet</p></div><div><h2 style="font-size:40px;color:#fbbf24">85+</h2><p>Packages Delivered</p></div><div><h2 style="font-size:40px;color:#a855f7">99.8%</h2><p>Customer Satisfaction</p></div>
+</div></div></section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo"><div class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></div>Ride<span style="color:#38bdf8;">X</span></a>
+        <p><strong>RideX – Smart Multi-Vehicle Rental, Booking & Courier Delivery System</strong>. BSc Computer Science final year project demo.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Navigation</h4><ul class="footer-links">
+        <li><a href="index.html">Home Page</a></li><li><a href="vehicles.html">All Fleet Vehicles</a></li>
+        <li><a href="booking.html">Book Instant Ride</a></li><li><a href="rental.html">Self-Drive Rentals</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links">
+        <li>Ride Booking</li><li>Vehicle Rental</li><li>Courier Delivery</li><li>Tracking</li>
+      </ul></div>
+      <div class="footer-col"><h4>Demo Notice</h4><p style="color:#94a3b8;">This GitHub Pages version is a static visual demo. No real booking, database or payment is performed.</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 RideX Demo • BSc Computer Science Final Year Project</p></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script><script>function demoAlert(e){e.preventDefault();alert('RideX Demo: This is a static presentation demo. No real booking or payment is processed.');}</script>
+</body></html>
